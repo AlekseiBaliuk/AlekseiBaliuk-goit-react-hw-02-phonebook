@@ -17,7 +17,6 @@ class App extends Component {
   };
 
   formSubmitHandler = data => {
-    // console.log(data);
     const newArray = this.state.contacts.map(contact => contact.name);
     if (newArray.includes(data.name)) {
       return alert(`${data.name} is already in contacts.`);
